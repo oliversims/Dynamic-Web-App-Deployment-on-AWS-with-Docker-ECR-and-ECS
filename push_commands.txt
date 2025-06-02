@@ -1,0 +1,32 @@
+# make shell script executable powershell: 
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted
+
+# make shell script executable mac:
+chmod +x build_image.sh
+
+----------------------------------------------------------------
+
+# aws cli command to create an amazon ecr repository
+aws ecr create-repository --repository-name <repository-name> --region <region>
+  
+----------------------------------------------------------------
+
+# retag docker image 
+docker tag <image-tag> <repository-uri>
+
+# login to ecr
+aws ecr get-login-password | docker login --username AWS --password-stdin <aws_account_id>.dkr.ecr.<region>.amazonaws.com
+
+# push docker image to ecr repository 
+docker push <repository-uri>
+  
+----------------------------------------------------------------
+
+# to create an ssh tunnel in powershell, execute the following command:
+ssh -i <key_pier.pem> ec2-user@<public-ip> -L 3306:<rds-endpoint>:3306 -N
+
+
+# to create an ssh tunnel in linux or macOS, execute the following commands:
+Note: Be sure to replace YOUR_EC2_KEY, LOCAL_PORT, RDS_ENDPOINT, REMOTE_PORT, EC2_USER, and EC2_HOST with your relevant information.
+
+ssh -i "YOUR_EC2_KEY" -L LOCAL_PORT:RDS_ENDPOINT:REMOTE_PORT EC2_USER@EC2_HOST -N -f
