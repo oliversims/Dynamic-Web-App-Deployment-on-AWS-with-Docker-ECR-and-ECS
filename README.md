@@ -1,3 +1,7 @@
+![Alt text](Html.png)
+
+---
+
 # Dynamic Web App Deployment on AWS with Docker, ECR, and ECS
 
 This project demonstrates the deployment of a dynamic web application on AWS using containerization with Docker, Amazon ECR for image storage, and Amazon ECS for orchestration. The infrastructure is designed for high availability, security, and scalability.
