@@ -192,4 +192,4 @@ The solution ensures that all images built for ECS deployment are compatible wit
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is for educational and demonstration purposes.
