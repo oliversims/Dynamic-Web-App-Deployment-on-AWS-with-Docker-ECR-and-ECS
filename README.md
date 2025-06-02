@@ -178,9 +178,9 @@ The solution ensures that all images built for ECS deployment are compatible wit
 ## References
 
 -   [Dockerfile Reference](https://github.com/oliversims/DOCKER-PROJECTS/blob/main/rentzone/Dockerfile)
--   [Push Commands](https://apps.abacus.ai/chatllm/link-to-push-commands)
--   [Environment File Reference](https://apps.abacus.ai/chatllm/link-to-env-file)
--   [IAM Policy Reference](https://apps.abacus.ai/chatllm/link-to-iam-policy)
+-   [Push Commands](https://github.com/oliversims/Dynamic-Web-App-Deployment-on-AWS-with-Docker-ECR-and-ECS/blob/main/push_commands.txt)
+-   [Environment File Reference](https://github.com/oliversims/Dynamic-Web-App-Deployment-on-AWS-with-Docker-ECR-and-ECS/blob/main/rentzone.env)
+-   [IAM Policy Reference](https://github.com/oliversims/Dynamic-Web-App-Deployment-on-AWS-with-Docker-ECR-and-ECS/blob/main/Iam_policy)
 
 ## Contributing
 
